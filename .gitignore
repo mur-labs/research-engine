@@ -1,0 +1,32 @@
+# Environments and Python artifacts
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# Configuration and Secrets
+.env
+.env.local
+*.secret
+secrets.yaml
+
+# Runtime Data and Logs
+data/
+logs/
+*.sqlite
+*.sqlite3
+*.db
+*.log
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

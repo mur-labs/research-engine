@@ -1,0 +1,37 @@
+# Database
+database:
+  path: "data/research_engine.db"
+
+# LLM / AI Router Configuration
+llm:
+  base_url: "http://localhost:5000/v1"
+  api_key: "anything"
+  model: "smart"
+  timeout_seconds: 60.0
+
+# Academic APIs
+apis:
+  openalex:
+    base_url: "https://api.openalex.org"
+    email: "user@example.com"
+    rate_limit_per_second: 10
+  crossref:
+    base_url: "https://api.crossref.org"
+    email: "user@example.com"
+    rate_limit_per_second: 10
+  semanticscholar:
+    base_url: "https://api.semanticscholar.org/graph/v1"
+    rate_limit_per_second: 1
+  unpaywall:
+    base_url: "https://api.unpaywall.org/v2"
+    email: "user@example.com"
+
+# Zotero Configuration
+zotero:
+  data_dir: "~/Zotero"
+  bibtex_export_dir: "data/zotero_exports"
+
+# Retrieval & PDF
+retrieval:
+  pdf_storage_dir: "data/pdfs"
+  max_pdf_size_mb: 50.0
